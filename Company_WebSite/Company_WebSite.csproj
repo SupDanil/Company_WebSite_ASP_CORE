@@ -9,7 +9,6 @@
     <Folder Include="Areas\Admin\Views\" />
     <Folder Include="Models\ViewComponents\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Views\" />
     <Folder Include="Domain\" />
     <Folder Include="Service\" />
   </ItemGroup>

@@ -27,19 +27,16 @@ namespace Company_WebSite
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
+            if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
+            
             app.UseRouting();
 
+            // Подключаем поддержку статичных файлов
+            app.UseStaticFiles();
+            // Регестрируем нужные маршруты (EndPoits) 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                endpoints.MapControllerRoute("default", "{controller = Home}/{action = Index}/{id?}");
             });
         }
     }

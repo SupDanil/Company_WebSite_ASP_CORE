@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -15,6 +16,12 @@ namespace Company_WebSite
        
         public void ConfigureServices(IServiceCollection services)
         {
+            // Добовляем поддержку контроллеров и представлений (MVC)
+            services.AddControllersWithViews()
+            // Выстовляем совместимость с ASP.net CORE 3.0
+            .SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
+
+
         }
 
         

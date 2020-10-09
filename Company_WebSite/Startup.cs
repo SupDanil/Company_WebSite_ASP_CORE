@@ -35,8 +35,6 @@ namespace Company_WebSite
             app.UseStaticFiles();
             // Регестрируем нужные маршруты (EndPoits) 
 
-            
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

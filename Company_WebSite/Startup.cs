@@ -34,10 +34,20 @@ namespace Company_WebSite
             // Подключаем поддержку статичных файлов
             app.UseStaticFiles();
             // Регестрируем нужные маршруты (EndPoits) 
+
+            
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute("default", "{controller = Home}/{action = Index}/{id?}");
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllerRoute("default", "{controller = Home}/{action = Index}/{id?}");
+            //});
         }
     }
 }

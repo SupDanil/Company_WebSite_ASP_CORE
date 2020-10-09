@@ -794,7 +794,7 @@ article.blog-post {
     height: 32px;
     line-height: 24px;
     padding-left: 40px;
-    background: url("../sass/images/icon-bubble.png") no-repeat; }
+    background: url("images/icon-bubble.png") no-repeat; }
   article.blog-post .blog-post-image {
     width: 100%; }
 
@@ -910,7 +910,7 @@ ul.link-list li {
 
 /* Banner */
 #banner-wrapper {
-  background: #c8d2bc url(../sass/images/bg1.png);
+  background: #c8d2bc url(images/bg1.png);
   padding: 2em 0; }
 
 #banner {
@@ -918,7 +918,7 @@ ul.link-list li {
   width: 100%;
   padding: 6em 0;
   border-radius: 10px;
-  background-image: url(../sass/images/banner.jpg);
+  background-image: url(images/banner.jpg);
   background-size: cover;
   text-align: center;
   box-shadow: inset 0 0 0 20px #fff; }
@@ -1076,7 +1076,7 @@ ul.link-list li {
         position: absolute;
         width: 20px;
         height: 30px;
-        background: url("../sass/images/mobileUI-site-nav-opener-bg.svg");
+        background: url("images/mobileUI-site-nav-opener-bg.svg");
         top: 16px;
         left: 19px; }
       #titleBar .toggle:active:after {
@@ -1163,7 +1163,7 @@ ul.link-list li {
     width: 100%; }
   /* Banner */
   #banner-wrapper {
-    background: #c8d2bc url(../sass/images/bg1.png);
+    background: #c8d2bc url(images/bg1.png);
     padding: 20px 0; }
   #banner {
     box-shadow: inset 0 0 0 10px #fff;

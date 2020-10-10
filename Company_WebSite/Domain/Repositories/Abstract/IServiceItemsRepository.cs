@@ -9,8 +9,8 @@ namespace Company_WebSite.Domain.Repositories.Abstract
     interface IServiceItemsRepository
     {
         IQueryable<ServiceItem> GetServiceItem();
-        ServiceItem GetErviceItemById(Guid Id);
+        ServiceItem GetErviceItemById(Guid id);
         void SaveServiceItem(ServiceItem entity);
-        void DeleteServiceItem(Guid Id);
+        void DeleteServiceItem(Guid id);
     }
 }

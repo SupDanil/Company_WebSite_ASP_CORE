@@ -16,9 +16,10 @@ namespace Company_WebSite.Domain.Repositories.EntityFramework
         {
             this.context = context;
         }
-        public void DeleteTextField(Guid Id)
+        public void DeleteTextField(Guid id)
         {
-            throw new NotImplementedException();
+           context.TextFields.Remove(new TextField() {Id = id});
+            context.SaveChanges();
         }
 
         public TextField GetTextFieldByCodeWord(string CodeWord)
@@ -26,9 +27,9 @@ namespace Company_WebSite.Domain.Repositories.EntityFramework
             return context.TextFields.FirstOrDefault(x => x.CodeWord == CodeWord);
         }
 
-        public TextField GetTextFieldById(Guid Id)
+        public TextField GetTextFieldById(Guid id)
         {
-            return context.TextFields.FirstOrDefault(x => x.Id == Id);
+            return context.TextFields.FirstOrDefault(x => x.Id == id);
         }
 
         public IQueryable<TextField> GetTextFields()

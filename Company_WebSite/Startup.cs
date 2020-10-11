@@ -55,7 +55,7 @@ namespace Company_WebSite
                 options.AccessDeniedPath = "/account/accessdenied";
                 options.SlidingExpiration = true;
             });
-            // Ќастраиваем политику авторизации дл€ ADMIN
+            // Ќастраиваем политику авторизации дл€ AdminArea
             services.AddAuthorization(x =>
             {
                 x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin"); });

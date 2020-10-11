@@ -194,27 +194,27 @@ namespace Company_WebSite.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "58356934-6184-0354-7295-5478392143", "0a5545aa-ca06-4cd2-8933-794fac9b0edc", "admin", "ADMIN" });
-
-            migrationBuilder.InsertData(
-                table: "AspNetUserRoles",
-                columns: new[] { "UserId", "RoleId" },
-                values: new object[] { "41329012-6473-8234-0912-5566443728", "69345218-9904-1256-6732-4362765413" });
+                values: new object[] { "iUNFjWQ5-ctP0-J3bH-uFi6-o3ihaf8tJNU7", "152a4c39-b2c7-4e48-ab34-13b640d875f2", "admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { "43811234-7623-8643-9462-0192837465", 0, "db7093d5-3e38-4785-b23a-bed9f9b8b27b", "fer@gmail.com", true, false, null, "FER@GMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAEKIuAQSno8/EOdgeUtRbdt9awfaB0Q3ikAmLtuxauuKvUS2D022qaYgR766XwpQhTw==", null, false, "", false, "admin" });
+                values: new object[] { "oYV9cgjS-cPbA-hKvI-oe4v-M165pjc6i7xz", 0, "3d75be9d-77d7-41f2-a8f5-cbf3a101d232", "fer@gmail.com", true, false, null, "FER@GMAIL.COM", "ADMIN", "AQAAAAEAACcQAAAAEGCb2HFyAPno06yBGenHCHZ/qv2j+3+eQIvcvUVh4LJl24lGPFMAscS5nIfitXrwTQ==", null, false, "", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "TextFields",
                 columns: new[] { "Id", "CodeWord", "DataAdded", "MetaDiscription", "MetaKeywords", "MetaTitle", "Subtitle", "Text", "Title", "TitleImagePath" },
                 values: new object[,]
                 {
-                    { new Guid("b95d11b2-af99-41ac-9204-c32b25b0a91c"), "PageIndex", new DateTime(2020, 10, 11, 8, 42, 23, 62, DateTimeKind.Utc).AddTicks(1089), null, null, null, null, "Содержание заполняется администратором", "Главная", null },
-                    { new Guid("07c3c90a-e380-4997-87a7-0cfccdb6a07e"), "PageServices", new DateTime(2020, 10, 11, 8, 42, 23, 62, DateTimeKind.Utc).AddTicks(4782), null, null, null, null, "Содержание заполняется администратором", "Наши услуги", null },
-                    { new Guid("4d5977e0-c72e-4b30-be7d-ec7a876e7514"), "PageContacts", new DateTime(2020, 10, 11, 8, 42, 23, 62, DateTimeKind.Utc).AddTicks(4905), null, null, null, null, "Содержание заполняется администратором", "Контакты", null }
+                    { new Guid("c34565a0-8c4c-4564-a7b0-97b25869f4f7"), "PageIndex", new DateTime(2020, 10, 11, 9, 12, 58, 108, DateTimeKind.Utc).AddTicks(6051), null, null, null, null, "Содержание заполняется администратором", "Главная", null },
+                    { new Guid("e93fd94d-4ef5-4df7-befa-e05437c931ba"), "PageServices", new DateTime(2020, 10, 11, 9, 12, 58, 109, DateTimeKind.Utc).AddTicks(46), null, null, null, null, "Содержание заполняется администратором", "Наши услуги", null },
+                    { new Guid("c7a52177-91f7-4044-badf-18476501bef7"), "PageContacts", new DateTime(2020, 10, 11, 9, 12, 58, 109, DateTimeKind.Utc).AddTicks(156), null, null, null, null, "Содержание заполняется администратором", "Контакты", null }
                 });
+
+            migrationBuilder.InsertData(
+                table: "AspNetUserRoles",
+                columns: new[] { "UserId", "RoleId" },
+                values: new object[] { "oYV9cgjS-cPbA-hKvI-oe4v-M165pjc6i7xz", "iUNFjWQ5-ctP0-J3bH-uFi6-o3ihaf8tJNU7" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

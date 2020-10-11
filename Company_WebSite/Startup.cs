@@ -67,13 +67,18 @@ namespace Company_WebSite
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment()) app.UseDeveloperExceptionPage();
-            
-            app.UseRouting();
 
             // Подключаем поддержку статичных файлов
             app.UseStaticFiles();
-            // Регестрируем нужные маршруты (EndPoits) 
+            
+            app.UseRouting();
 
+            // Подключаем аутентификацию и авторизацию
+            app.UseCookiePolicy();
+            app.UseAuthentication();
+            app.UseAuthorization();
+           
+            // Регестрируем нужные маршруты (EndPoits) 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

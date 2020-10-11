@@ -18,6 +18,6 @@ namespace Company_WebSite.Models
         public string Password { get; set; }
 
         [Display(Name = "Запомнить меня")]
-        public string RememberMe { get; set; }
+        public bool RememberMe { get; set; }
     }
 }

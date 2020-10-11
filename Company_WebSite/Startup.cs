@@ -54,11 +54,19 @@ namespace Company_WebSite
                 options.LoginPath = "/account/login";
                 options.AccessDeniedPath = "/account/accessdenied";
                 options.SlidingExpiration = true;
-            });       
+            });
+            // Настраиваем политику авторизации для ADMIN
+            services.AddAuthorization(x =>
+            {
+                x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin"); });
+            });
 
             // Добовляем поддержку контроллеров и представлений (MVC)
-            services.AddControllersWithViews()
-
+            services.AddControllersWithViews(x =>
+            {
+                // Добовлякм авторизацию для Admin
+                x.Conventions.Add(new AdminAreaAuthorization("Admin", "AdminArea"));
+            })
             // Выстовляем совместимость с ASP.net CORE 3.0
             .SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
         }

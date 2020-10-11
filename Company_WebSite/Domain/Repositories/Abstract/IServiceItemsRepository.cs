@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Company_WebSite.Domain.Repositories.Abstract
 {
-    interface IServiceItemsRepository
+   public interface IServiceItemsRepository
     {
         IQueryable<ServiceItem> GetServiceItem();
         ServiceItem GetErviceItemById(Guid id);

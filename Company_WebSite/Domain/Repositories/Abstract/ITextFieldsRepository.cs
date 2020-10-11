@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Company_WebSite.Domain.Repositories.Abstract
 {
-    interface ITextFieldsRepository
+    public interface ITextFieldsRepository
     {
         IQueryable<TextField> GetTextFields();
         TextField GetTextFieldById(Guid id);

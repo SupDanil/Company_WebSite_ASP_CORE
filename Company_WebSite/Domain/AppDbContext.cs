@@ -22,14 +22,14 @@ namespace Company_WebSite.Domain
 
             modelBuilder.Entity<IdentityRole>().HasData(new IdentityRole
             {
-                Id = "55-66-77-88",
+                Id = "iUNFjWQ5-ctP0-J3bH-uFi6-o3ihaf8tJNU7",
                 Name = "admin",
                 NormalizedName = "ADMIN"
             });
 
             modelBuilder.Entity<IdentityUser>().HasData(new IdentityUser
             {
-                Id = "98-34-54-23",
+                Id = "oYV9cgjS-cPbA-hKvI-oe4v-M165pjc6i7xz",
                 UserName = "admin",
                 NormalizedUserName = "ADMIN",
                 Email = "fer@gmail.com",
@@ -40,33 +40,27 @@ namespace Company_WebSite.Domain
             });
             modelBuilder.Entity<IdentityUserRole<string>>().HasData(new IdentityUserRole<string>
             {
-              RoleId = "45-34-12-76",
-              UserId = "42-29-73-65"
+              RoleId = "lsgC9zoH-RcK4-dNmQ-B515-z1PosqtUvK",
+              UserId = "MIvX0Aoc-1zNZ-oSEZ-JH9w-eV0vNnQj6i"
             });
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("54-23-72-16"),
+                Id = new Guid("pVJNUVnD-ztci-8M0o-gFsj-fwPgijZku8"),
                 CodeWord = "PageIndex",
                 Title = "Главная"
             });
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("54-18-71-56"),
+                Id = new Guid("wnHIk8jg-pGns-puIK-waeU-VerNyfF02u"),
                 CodeWord = "PageServices",
-                Title = "Наши услуги"
+                Title = "Наши услуги"                                                
             });
             modelBuilder.Entity<TextField>().HasData(new TextField
             {
-                Id = new Guid("67-11-87-01"),
+                Id = new Guid("PFKka935-3Hze-ce8G-PZNg-lXieLFGHqO"),
                 CodeWord = "PageContacts",
                 Title = "Контакты"
             });
-
-
-
-
-
-
         }
     }
 }

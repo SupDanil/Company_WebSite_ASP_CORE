@@ -24,7 +24,7 @@ namespace Company_WebSite.Domain.Repositories.EntityFramework
 
         public ServiceItem GetErviceItemById(Guid id)
         {
-            return context.ServiceItems.FirstOrDefault(x => x.Id == id)
+            return context.ServiceItems.FirstOrDefault(x => x.Id == id);
         }
 
         public IQueryable<ServiceItem> GetServiceItem()

@@ -30,7 +30,7 @@ namespace Company_WebSite.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 dataManager.TextFields.SaveTextFields(model);
-                return RedirectToAction(nameof(HomeController.Index));  /*, nameof(HomeController).CutController()*/
+                return RedirectToAction(nameof(HomeController.Index));     /*, nameof(HomeController).CutController());*/
             }
             return View(model);
         }

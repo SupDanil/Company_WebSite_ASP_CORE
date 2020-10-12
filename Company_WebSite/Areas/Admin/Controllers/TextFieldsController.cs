@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Company_WebSite.Controllers;
 using Company_WebSite.Domain;
 using Company_WebSite.Domain.Entities;
+using Company_WebSite.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Company_WebSite.Areas.Admin.Controllers
@@ -30,7 +31,7 @@ namespace Company_WebSite.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 dataManager.TextFields.SaveTextFields(model);
-                return RedirectToAction(nameof(HomeController.Index));     /*, nameof(HomeController).CutController());*/
+                return RedirectToAction(nameof(HomeController.Index), nameof(HomeController).CutController());
             }
             return View(model);
         }

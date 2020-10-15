@@ -44,3 +44,10 @@
         </form>
     </div>
 </div>
+<script>
+    window.onload = function () {
+        var newCkEdit = CKEDITOR.replace('@Html.IdFor(x=>x.Text)');
+        newCkEdit.updateElement();
+    }
+</script>
+
